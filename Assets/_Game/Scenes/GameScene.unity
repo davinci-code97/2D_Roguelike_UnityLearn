@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 4, y: 4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -224,8 +224,9 @@ GameObject:
   m_Component:
   - component: {fileID: 730106891}
   - component: {fileID: 730106890}
+  - component: {fileID: 730106892}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: BoardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,6 +260,33 @@ Transform:
   - {fileID: 1908320134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730106892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730106889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b36a6568ffa62c41a722cce73038489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1908320136}
+  boardWidth: 8
+  boardHeight: 8
+  groundTileArray:
+  - {fileID: 11400000, guid: 68ef6ff9deab8254997177bdc62af8e1, type: 2}
+  - {fileID: 11400000, guid: 489f78f17ab976a44b72db313f820628, type: 2}
+  - {fileID: 11400000, guid: ff7413d760daf2942a955cc525a4dde3, type: 2}
+  - {fileID: 11400000, guid: 6826330bf714fa343823ab0bd19224a5, type: 2}
+  - {fileID: 11400000, guid: 2714524e85f26c24ebba76e5ded21084, type: 2}
+  - {fileID: 11400000, guid: 9bf9335220b88e74dba3569b1414e9f3, type: 2}
+  - {fileID: 11400000, guid: a97d6548630ad1043bd4035ee4f938a5, type: 2}
+  - {fileID: 11400000, guid: 8175dcc6373d2b745ac9d416ef3322fe, type: 2}
+  wallTileArray:
+  - {fileID: 11400000, guid: 7a0893b7fecf513438f92b1b2f3dda10, type: 2}
+  - {fileID: 11400000, guid: 41f0a959148a2634194e314872ffda45, type: 2}
 --- !u!1 &1908320133
 GameObject:
   m_ObjectHideFlags: 0
